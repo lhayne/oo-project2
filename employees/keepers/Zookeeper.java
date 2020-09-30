@@ -16,6 +16,9 @@ OBSERVER PATTERN : 	Here the Zookeeper becomes observable by the
 					also observes the clock throughout the day as all dilligent
 					hard working folks do.
 */
+
+// Inspiration for this implementation from this post:
+// https://stackoverflow.com/questions/12932945/define-a-class-as-observable-and-observer-both
 public class Zookeeper extends Observable implements ZooEmployee, Observer {
 
 	private String currentTask;
